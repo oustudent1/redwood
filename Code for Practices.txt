@@ -1,0 +1,229 @@
+// Code for Practcies:
+
+// Practice 1-2
+
+
+// Step 15
+// Copy and paste in the app JSON code
+
+/* Copyright (c) 2023, Oracle and/or its affiliates */
+
+define(['ojs/ojlogger',
+      'ojs/ojconverterutils-i18n',
+      'ojs/ojconverter-number',
+      'ojs/ojconverter-datetime',
+      'oj-sp/common-util/common-util'], function(Logger, IntlConverterUtils, NumberConverter, DateTimeConverter, utilityClass) {
+  'use strict';
+
+ var FlowModule  = function FlowModule(){
+// get the default date format pattern from user profile
+    var dateOptions = {
+      formatStyle: "date",
+      pattern: utilityClass.getDateFormatPattern()
+    };
+    // create just one instance of converter per application
+    this.dateConverter = new DateTimeConverter.IntlDateTimeConverter(
+      dateOptions
+    );
+    // create map to cache currency converters
+    this.currencyConverterMap = new Map();
+  };
+  
+  FlowModule.prototype.formatDate = function (date) {
+    return this.dateConverter.format(date);
+  };
+  FlowModule.prototype.formatCurrency = function (currCode, value) {
+    // if caller provides the currency code then use it otherwise get the default one from the user profile
+    currCode = currCode ? currCode : utilityClass.getCurrencyCode();
+
+    // if converter doesn't exists in map crearte a new one and update cache
+    if(!this.currencyConverterMap.get(currCode)) {
+      var numberOptions = {
+        style: "currency",
+        currency: currCode
+      };
+
+      // update the cache with new converter
+      this.currencyConverterMap.set(currCode, new NumberConverter.IntlNumberConverter(numberOptions));
+    }
+    return this.currencyConverterMap.get(currCode).format(value || 0);
+  };
+
+
+  return FlowModule;
+});
+
+
+
+
+
+// Practice 2-2
+
+// Step 19
+oj-header 
+oj-sm-12 
+oj-sp-typography-display-6 
+oj-helper-truncate 
+oj-sm-padding-8x-horizontal
+
+// Step 40
+[[ $application.path + 'resources/' + $current.data.rraOrderLines.items[0]?.ImageUrl ]]
+
+// Step 41
+[[ $current.data.orderNumber ]]
+[[ $current.data.customerFirstName + ' ' + $current.data.customerLastName ]]
+[[ $current.data.orderStatus ]]
+[[ '$' + $current.data.totalAmount + ".00" ]]
+
+
+// Practice 3-1
+
+// Step 22
+ [[ $current.data.orderStatus === 'DRAFT' ? 'warning' : 'info' ]]
+ 
+// Step 30
+[[$current.data.customerFirstName + '  ' + $current.data.customerLastName]]
+
+// Step 34
+[[$current.data.orderNumber]]
+
+// Step 35
+[[$application.functions.formatDate($current.data.orderDate)]]
+
+// Step 38
+[[$application.functions.formatCurrency($flow.constants.defaultCurrencyCode, $current.data.totalAmount ? $current.data.totalAmount : 0)]]
+
+
+Practice 3-2
+
+// Step 15
+{{ $variables.rraOrders.customerIdObject.items[0]?.customerName }}
+[[ $variables.rraOrders.rraCustomers?.items[0]?.emailAddress ]]
+[[ $variables.rraOrders.rraCustomers?.items[0]?.phone ]]
+
+// Step 17
+[[ "Order "+ $variables.rraOrders.orderNumber ]] 
+
+//Step 18 Contextual Info
+[[ [{"label":"Customer","value":$variables.rraOrders.customerFirstName + ' ' +$variables.rraOrders.customerLastName},
+  {"label":"Date","value": $flow.functions.formatDate($page.variables.rraOrders.orderDate)},{"label":"Total Amount","value":$flow.functions.formatCurrency($flow.constants.defaultCurrencyCode, $page.variables.rraOrders.totalAmount ? $page.variables.rraOrders.totalAmount : 0)}] ]]
+
+
+// Step 23
+[[ $variables.rraOrders.customerIdObject.items[0].phone ]]
+  
+// Step 45
+[[ $application.path + 'resources/' + $current.row.imageUrl ]]
+   
+// Step 56
+[[ $application.path + 'resources/' + $variables.rraOrders.orderLinesCollection.items[0]?.imageUrl ]]
+
+// Step 60
+[[ $variables.rraOrders.orderLinesCollection.items[0]?.productName ]]
+
+// Step 83
+[[ $application.path + 'resources/' + $variables.rraLineItem.imageUrl ]]
+
+// Step 84
+[[ $variables.rraLineItem.productName ]]
+
+// Practice 3-3
+
+// Step 15
+[[ $variables.rraCustomers.lastName ]]
+
+
+// Step 29
+[[ [{"primaryText":$current.data.orderNumber,"secondaryText":$flow.functions.formatDate($current.data.orderDate),"overlineText":$current.data.orderStatus === 'DRAFT' ? 'New Order' : 'Order'},{"overlineText":"Total Amount","primaryText":$flow.functions.formatCurrency($flow.constants.defaultCurrencyCode, $current.data.totalAmount ? $current.data.totalAmount : 0)}] ]]
+
+// Step 31
+[[ $current.data.orderStatus ]]
+[[ $current.data.orderStatus === 'DRAFT' ? 'warning' : 'info' ]]
+
+// Practice 4-1
+// Step 17
+[
+    {
+        label: 'customer',
+        value: $page.variables.customerName
+    },
+    {
+        label: 'date',
+        value: $application.functions.formatDate( Date.now())
+    },
+    {
+        label: 'totalAmount',
+        value: 'Total Amount: ' + $application.functions.formatCurrency($flow.constants.defaultCurrencyCode, $page.variables.totalAmount)
+    }
+]
+
+// Practice 4-2
+// Step 22
+[[ 'Edit: ' +$variables.rraOrders.OrderNumber ]]
+
+// Step 23
+[[ 'Order Date: ' + $application.functions.formatDate($variables.rraOrders.OrderDate) ]]
+
+// Practice 5-1
+// Step 10
+[[ $application.path + 'resources/' + $current.row.ImageUrl ]] 
+
+// Practice 5-2
+// Step 12
+[[$application.path + 'resources/' + $variables.rraProducts.ImageUrl ]]
+
+Practice 6-1
+
+//code for default value for kpisArray
+// Step 7
+[
+    {
+        "id": "KPI_1_id",
+        "title": "Total Number of Orders",
+        "metric": "---",
+        "meta": "This month"
+    },
+    {
+        "id": "KPI_2_id",
+        "title": "Total Items in Stock",
+        "metric": "---",
+        "meta": "Year to date"
+    },
+    {
+        "id": "KPI_3_id",
+        "title": "Number of Customers",
+        "metric": "---",
+        "meta": "Year to date"
+    }
+]
+  
+  
+  
+  
+// Use for setting the count for rraOrders
+// Step 24
+  
+  "$page.variables.kpisArray[0].metric": {
+     "source": [
+         "{{ $chain.results.callRestGetallRraOrders.body.count }}"
+        ],
+          "reset": "none",
+          "auto": "always"
+     }
+     
+// Use for setting the count for rraProducts
+// Step 36
+     
+  "$page.variables.kpisArray[1].metric": {
+          "source": [
+            "{{ $chain.results.callRestGetallRraProducts.body.count }}"
+          ],
+          "reset": "none",
+          "auto": "always"
+        }
+        
+// Step 43
+[[  Number.parseFloat($current.data.TotalAmount) ]]
+
+// Step 54
+[[  Number.parseFloat($current.data.TotalAmount) ]]
