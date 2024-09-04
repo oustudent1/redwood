@@ -3,7 +3,7 @@
 // Practice 1-2
 
 
-// Step 15
+// Step 8
 // Copy and paste in the app JSON code
 
 /* Copyright (c) 2023, Oracle and/or its affiliates */
@@ -66,10 +66,10 @@ oj-sp-typography-display-6
 oj-helper-truncate 
 oj-sm-padding-8x-horizontal
 
-// Step 40
-[[ $application.path + 'resources/' + $current.data.rraOrderLines.items[0]?.ImageUrl ]]
+// Step 42
+[[ $application.path + 'resources/' + $current.data.orderLinesCollection.items[0]?.imageUrl ]]
 
-// Step 41
+// Step 43
 [[ $current.data.orderNumber ]]
 [[ $current.data.customerFirstName + ' ' + $current.data.customerLastName ]]
 [[ $current.data.orderStatus ]]
@@ -81,50 +81,50 @@ oj-sm-padding-8x-horizontal
 // Step 22
  [[ $current.data.orderStatus === 'DRAFT' ? 'warning' : 'info' ]]
  
-// Step 30
+// Step 29
 [[$current.data.customerFirstName + '  ' + $current.data.customerLastName]]
 
-// Step 34
+// Step 33
 [[$current.data.orderNumber]]
 
-// Step 35
-[[$application.functions.formatDate($current.data.orderDate)]]
+// Step 34
+[[$flow.functions.formatDate($current.data.orderDate)]]
 
-// Step 38
-[[$application.functions.formatCurrency($flow.constants.defaultCurrencyCode, $current.data.totalAmount ? $current.data.totalAmount : 0)]]
+// Step 37
+[[$flow.functions.formatCurrency($flow.constants.defaultCurrencyCode, $current.data.totalAmount ? $current.data.totalAmount : 0)]]
+
+// Step 77
+{{ current.data.customerId }}
+
 
 
 Practice 3-2
 
-// Step 15
-{{ $variables.rraOrders.customerIdObject.items[0]?.customerName }}
-[[ $variables.rraOrders.rraCustomers?.items[0]?.emailAddress ]]
-[[ $variables.rraOrders.rraCustomers?.items[0]?.phone ]]
 
-// Step 17
+// Step 16
 [[ "Order "+ $variables.rraOrders.orderNumber ]] 
 
-//Step 18 Contextual Info
+//Step 17 Contextual Info
 [[ [{"label":"Customer","value":$variables.rraOrders.customerFirstName + ' ' +$variables.rraOrders.customerLastName},
   {"label":"Date","value": $flow.functions.formatDate($page.variables.rraOrders.orderDate)},{"label":"Total Amount","value":$flow.functions.formatCurrency($flow.constants.defaultCurrencyCode, $page.variables.rraOrders.totalAmount ? $page.variables.rraOrders.totalAmount : 0)}] ]]
 
 
-// Step 23
-[[ $variables.rraOrders.customerIdObject.items[0].phone ]]
+// Step 35
+[[ $variables.rraOrders.customerIdObject.items[0]?.phone ]]
   
-// Step 45
+// Step 43
 [[ $application.path + 'resources/' + $current.row.imageUrl ]]
    
-// Step 56
+// Step 55
 [[ $application.path + 'resources/' + $variables.rraOrders.orderLinesCollection.items[0]?.imageUrl ]]
 
-// Step 60
+// Step 59
 [[ $variables.rraOrders.orderLinesCollection.items[0]?.productName ]]
 
-// Step 83
+// Step 81
 [[ $application.path + 'resources/' + $variables.rraLineItem.imageUrl ]]
 
-// Step 84
+// Step 82
 [[ $variables.rraLineItem.productName ]]
 
 // Practice 3-3
@@ -149,28 +149,31 @@ Practice 3-2
     },
     {
         label: 'date',
-        value: $application.functions.formatDate( Date.now())
+        value: $flow.functions.formatDate( Date.now())
     },
     {
         label: 'totalAmount',
-        value: 'Total Amount: ' + $application.functions.formatCurrency($flow.constants.defaultCurrencyCode, $page.variables.totalAmount)
+        value: 'Total Amount: ' + $flow.functions.formatCurrency($flow.constants.defaultCurrencyCode, $page.variables.totalAmount)
     }
 ]
 
-// Practice 4-2
-// Step 22
-[[ 'Edit: ' +$variables.rraOrders.OrderNumber ]]
+// Step 36
+[[  $application.path + 'resources/' +$current.row.imageUrl ]]
 
-// Step 23
-[[ 'Order Date: ' + $application.functions.formatDate($variables.rraOrders.OrderDate) ]]
+// Practice 4-2
+// Step 18
+[[ 'Edit: ' + $variables.rraOrders.orderNumber ]]
+
+// Step 19
+[[ 'Order Date: ' + $flow.functions.formatDate($variables.rraOrders.orderDate) ]]
 
 // Practice 5-1
-// Step 10
-[[ $application.path + 'resources/' + $current.row.ImageUrl ]] 
+// Step 9
+[[ $application.path + 'resources/' + $current.row.imageUrl ]] 
 
 // Practice 5-2
 // Step 12
-[[$application.path + 'resources/' + $variables.rraProducts.ImageUrl ]]
+[[$application.path + 'resources/' + $variables.rraProducts.imageUrl ]]
 
 Practice 6-1
 
@@ -203,27 +206,7 @@ Practice 6-1
 // Use for setting the count for rraOrders
 // Step 24
   
-  "$page.variables.kpisArray[0].metric": {
-     "source": [
-         "{{ $chain.results.callRestGetallRraOrders.body.count }}"
-        ],
-          "reset": "none",
-          "auto": "always"
-     }
-     
-// Use for setting the count for rraProducts
-// Step 36
-     
-  "$page.variables.kpisArray[1].metric": {
-          "source": [
-            "{{ $chain.results.callRestGetallRraProducts.body.count }}"
-          ],
-          "reset": "none",
-          "auto": "always"
-        }
-        
-// Step 43
-[[  Number.parseFloat($current.data.TotalAmount) ]]
+   $page.variables.kpisArray[0].metric
 
-// Step 54
-[[  Number.parseFloat($current.data.TotalAmount) ]]
+     
+        
