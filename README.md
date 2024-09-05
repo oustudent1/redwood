@@ -11,9 +11,13 @@ Password:
 
 Domain
 Name	Datacenter	Username	Password
+
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora001	WlS8U77Z0N
+
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora002	FWHG28Zez8
+
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora003	9EwlBF2X9E
+
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora004	nKSzQE0O48
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora005	2HEw9wTQ1T
 ocuocictrng27	https://myservices-ocuocictrng27.console.oraclecloud.com/mycloud/cloudportal/dashboard	98976997-ora006	Z3MsFGIwvY
