@@ -11,19 +11,19 @@ Password:
                  URL	                                                                                                         **Username**	 **Password**		
                  
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora001	WlS8U77Z0N
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora001	WlS8U77Z0N
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora002	FWHG28Zez8
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora002	FWHG28Zez8
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora003	9EwlBF2X9E
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora003	9EwlBF2X9E
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora004	nKSzQE0O48
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora004	nKSzQE0O48
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora005	2HEw9wTQ1T
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora005	2HEw9wTQ1T
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora006	Z3MsFGIwvY
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora006	Z3MsFGIwvY
 
-ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora007	4Fnb78WZ5U
+	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora007	4Fnb78WZ5U
 
 ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora008	2E3AXNPI9y
 ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora009	7lVHH512hA
