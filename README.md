@@ -4,14 +4,22 @@ Materials for OU redwood and vbs courses
 Register for free course at Oracle University: https://mylearn.oracle.com/ou/course/design-and-develop-redwood-applications-new/135453/
 Log in with @oracle.com account
 
-**URL for Lab Envirnment:**      https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
+**URL for Lab Envirnment:**      
+https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
+
+
 Username		Password
 		
 98976997-ora001		WlS8U77Z0N
+
 98976997-ora002		FWHG28Zez8
+
 98976997-ora003		9EwlBF2X9E
+
 98976997-ora004		nKSzQE0O48
+
 98976997-ora005		2HEw9wTQ1T
+
 98976997-ora006		Z3MsFGIwvY
 98976997-ora007		4Fnb78WZ5U
 98976997-ora008		2E3AXNPI9y
