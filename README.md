@@ -8,8 +8,9 @@ URL for Lab Envirnment:
 Username:
 Password:
 
-Domain	                 URL	                                                                                                  **Username**	 **Password**
-Name			
+                 URL	                                                                                                         **Username**	 **Password**		
+                 
+
 ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora001	WlS8U77Z0N
 
 ocuocictrng27	    https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/	98976997-ora002	FWHG28Zez8
