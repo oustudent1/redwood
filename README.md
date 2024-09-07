@@ -8,7 +8,7 @@ Log in with @oracle.com account
 https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
 
 
-Username		Password
+Username			Password
 		
 98976997-ora001		WlS8U77Z0N
 
