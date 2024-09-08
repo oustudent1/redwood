@@ -3,7 +3,7 @@
 
 1. Select **Training_Accounts.txt** file.
 
-2. In CHROME browser open this link in a New Tab: (Right-click > Open in New Tab)
+2. In CHROME browser open this link in a New Tab: (Right-click > Open Link in New Tab)
    
 https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
 
