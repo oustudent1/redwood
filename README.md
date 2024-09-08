@@ -3,10 +3,10 @@
 
 1. Select **Training_Accounts.txt** file.
 
-2. In CHROME browser copy and paste URL:
+2. In CHROME browser click this link:
    
-**https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
-**
+https://appdevcs98976997-ocuocictrng27-iad.developer.ocp.oraclecloud.com/appdevcs98976997-ocuocictrng27-iad/
+
 
 4. Use assigned account and password from Training_Accounts.txt to log in. 
 
