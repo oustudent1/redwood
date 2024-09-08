@@ -3,7 +3,7 @@
 
 1. Select **Training_Accounts.txt** file
 
-2. Copy and Paste URL into browser: 
+2. Opoen CHROME browser and copy and paste URL into browser.
 
 3. Use assigned account and password to log in
 
