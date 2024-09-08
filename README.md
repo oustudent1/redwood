@@ -1,5 +1,5 @@
 # redwood
-Materials for OU redwood and vbs courses
+**Materials for OU redwood and vbs courses**
 
 Download training_accounts.txt file
 
