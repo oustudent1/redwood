@@ -1,7 +1,7 @@
 # redwood
 **Materials for OU redwood and vbs courses**
 
-Download training_accounts.txt file
+Download Training_Accounts.txt file
 
 Paste URL into browser
 
