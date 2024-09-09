@@ -1,4 +1,16 @@
 # redwood
+
+https://vbs-dev-ocuocictrng6.developer.ocp.oraclecloud.com/vbs-dev-ocuocictrng6/
+
+ora012
+
+Oracle@#1234
+
+Project: VisualApp-ora012
+
+
+
+
 **Materials for OU redwood and vbs courses**
 
 1. Select **Training_Accounts.txt** file.
